@@ -1,7 +1,9 @@
 .banner{
 	height: calc(100vh - 35px);
+	max-height: 400px;
 	background: url('../assets/images/banner.png');
 	background-size: cover;
+	position: relative;
 	&__wrapper{
 	    position: absolute;
 	    width: 100%;
@@ -19,8 +21,37 @@
 		left: 0;
 		transition: .4s;
 		max-width: 100%;
+		bottom: 15%;
 	}
 	&__pedreiro{
-		bottom: -2%;
+		bottom: 0%;
+	}
+}
+
+@media (min-width: 576px){}
+@media (min-width: 768px){
+	.banner{
+		max-height: none;
+		&__pedrasFundo,
+		&__pedrasFrente{
+			bottom: 15%;
+		}
+	}
+}
+@media (min-width: 992px){
+	.banner{
+		&__pedrasFundo,
+		&__pedrasFrente{
+			bottom: 15%;
+		}
+	}
+}
+@media (min-width: 1200px){
+	.banner{
+		&__pedrasFundo,
+		&__pedreiro,
+		&__pedrasFrente{
+			bottom: 0;
+		}
 	}
 }

@@ -1,6 +1,7 @@
 .topBar{
 	background-color: #2a2f43;
 	padding: 8px 0;
+	display: none;
 	&--wrapper{
 		display: flex;
 		justify-content: space-between;
@@ -37,5 +38,11 @@
 		&--youtube{
 			font-size: 16px;
 		}
+	}
+}
+
+@media (min-width: 768px){
+	.topBar{
+		display: block;
 	}
 }
