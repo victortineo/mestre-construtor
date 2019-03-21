@@ -3,6 +3,7 @@ import './banner.scss'
 import pedreiro from '../assets/images/pedreiro.png'
 import pedrasFundo from '../assets/images/pedras-fundo.png'
 import pedrasFrente from '../assets/images/pedras-frente.png'
+import logoMestre from '../assets/images/Logo-Mestre.png'
 import { Throttle } from 'react-throttle';
 
 
@@ -13,7 +14,8 @@ const moveBaner = (elm) => {
 	// elementos 
 	const pedreiro = document.getElementsByClassName('banner__pedreiro')[0]
 	const pedrasFrente = document.getElementsByClassName('banner__pedrasFrente')[0]
-	const pedrasFundo = document.getElementsByClassName('banner__pedrasFundo')[0]
+	const logoWrapper = document.getElementsByClassName('banner__logoWrapper')[0]
+	const logo = document.getElementsByClassName('banner__logo')[0]
 	const wrapper = document.getElementsByClassName('banner__wrapper')[0]
 	// tamanhos da tela
 	const wrapperWidth = wrapper.offsetWidth;
@@ -23,7 +25,7 @@ const moveBaner = (elm) => {
 	console.log('tamanho do container: ', wrapperWidth)
 	console.log('resultado da divisão: ', x / wrapperWidth)
 	pedrasFrente.style.transform = `translate(${(x / wrapperWidth * 40) -4}px, ${(y / wrapperHeight * 40) -20}px)`
-	pedrasFundo.style.transform = `translate(${(x / wrapperWidth * 5) -4}px, ${(y / wrapperHeight * 5) -4}px)`
+	logoWrapper.style.transform = `translate(${(x / wrapperWidth * 5) -8}px, ${(y / wrapperHeight * 5) -8}px)`
 }
 
 const Banner = () => {
@@ -31,7 +33,10 @@ const Banner = () => {
 		<div className="banner">
 			<Throttle time="200" handler="onMouseMove">
 				<div className="banner__wrapper" onMouseMove={(e) => moveBaner(e)}>
-					<img className="banner__pedrasFundo" src={pedrasFundo} alt=""/>
+					<div className="banner__logoWrapper">
+						<img className="banner__pedrasFundo" src={pedrasFundo} alt=""/>
+						<img className="banner__logo" src={logoMestre} alt=""/>
+					</div>
 					<img className="banner__pedreiro" src={pedreiro} alt=""/>
 					<img className="banner__pedrasFrente" src={pedrasFrente} alt=""/>
 				</div>

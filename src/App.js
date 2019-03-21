@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/header'
 import TopBar from './components/TopBar'
 import Banner from './components/banner'
 import Conheca from './components/Conheca'
+import Porque from './components/Porque'
 import ConhecaInfos from './components/ConhecaInfos'
 
 class App extends Component {
@@ -16,6 +16,7 @@ class App extends Component {
         <Banner />
         <Conheca />
         <ConhecaInfos />
+        <Porque />
       </div>
     );
   }

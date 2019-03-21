@@ -1,6 +1,6 @@
 .circularIcon{
-	height: 150px;
-	width: 150px;
+	height: 110px;
+    width: 110px;
 	background-color: #232b42;
 	border-radius: 50%;
 	position: relative;
@@ -13,5 +13,12 @@
 		transform: translate(-50%, -50%);
 	    background-size: contain;
     	background-repeat: no-repeat;
+	}
+}
+
+@media (min-width: 768px){
+	.circularIcon{
+		height: 150px;
+		width: 150px;
 	}
 }
