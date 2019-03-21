@@ -1,0 +1,10 @@
+.conhecaInfos{
+	background-color: #1a2741;
+	padding: 80px 0;
+	&__compose{
+		display: flex;
+		justify-content: space-around;
+		max-width: 1080px;
+		margin: 0 auto;
+	}
+}

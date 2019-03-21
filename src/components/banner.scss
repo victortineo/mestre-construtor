@@ -1,0 +1,26 @@
+.banner{
+	height: calc(100vh - 35px);
+	background: url('../assets/images/banner.png');
+	background-size: cover;
+	&__wrapper{
+	    position: absolute;
+	    width: 100%;
+	    left: 0;
+	    top: 0;
+	    height: 100%;
+	    z-index: 1;
+		overflow: hidden;
+
+	}
+	&__pedrasFundo,
+	&__pedreiro,
+	&__pedrasFrente{
+		position: absolute;
+		left: 0;
+		transition: .4s;
+		max-width: 100%;
+	}
+	&__pedreiro{
+		bottom: -2%;
+	}
+}

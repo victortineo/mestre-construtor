@@ -1,0 +1,29 @@
+.header{
+	display: flex;
+	position: absolute;
+	max-width: 968px;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 45px;
+	&__logo{
+		font-size: 0;
+		display: block;
+		background-image: url('../assets/images/logo.png');
+		background-size: contain;
+		height: 88px;
+		width: 85px;
+	}	
+	&__item{
+		margin: 0 5px;
+		text-transform: uppercase;
+		color: #fff;
+		transition: color ease .5s;
+		&:hover{
+			color: #0099dd;
+			font-weight: 700;
+		}
+	}
+}
