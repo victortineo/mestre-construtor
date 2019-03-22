@@ -6,6 +6,7 @@ import Banner from './components/banner'
 import Conheca from './components/Conheca'
 import Porque from './components/Porque'
 import ConhecaInfos from './components/ConhecaInfos'
+import Footer from './components/Footer'
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
         <Conheca />
         <ConhecaInfos />
         <Porque />
+        <Footer />
       </div>
     );
   }

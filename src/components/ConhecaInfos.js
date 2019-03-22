@@ -1,6 +1,5 @@
 import React from 'react'
 import './conhecaInfos.scss'
-import ContentText from './ContentText'
 import CounterSection from './CounterSection'
 
 const items = [

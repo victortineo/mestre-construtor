@@ -13,7 +13,7 @@ const items = [
 
 const Porque = () => {
 	return (
-		<div className="porque">
+		<div className="porque" id="porque">
 			<div className="porque__intro">
 				<div className="porque__pendente"></div>
 				<ContentText 

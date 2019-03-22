@@ -12,7 +12,7 @@ const items = [
 
 const Conheca = () => {
 	return (
-		<div className="conheca">
+		<div className="conheca" id="beneficios">
 			<div className="conheca__info">
 				<ContentText 
 					title='Conheça o programa'

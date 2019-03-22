@@ -8,14 +8,15 @@ import { Throttle } from 'react-throttle';
 
 
 const moveBaner = (elm) => {
+	if(window.innerWidth < 768){
+		return false
+	}
 	// eixos de movimento do mouse
 	const x = elm.clientX;
 	const y = elm.clientY;
 	// elementos 
-	const pedreiro = document.getElementsByClassName('banner__pedreiro')[0]
 	const pedrasFrente = document.getElementsByClassName('banner__pedrasFrente')[0]
 	const logoWrapper = document.getElementsByClassName('banner__logoWrapper')[0]
-	const logo = document.getElementsByClassName('banner__logo')[0]
 	const wrapper = document.getElementsByClassName('banner__wrapper')[0]
 	// tamanhos da tela
 	const wrapperWidth = wrapper.offsetWidth;

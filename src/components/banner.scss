@@ -16,7 +16,9 @@
 	}
 	&__logoWrapper{
 		transition: .4s;
-		left: 50%;
+		top: 50%;
+		transform: translateY(-50%);
+		position: relative;
 	}
 	&__logo{
 		width: 100%;
@@ -34,7 +36,7 @@
 		bottom: 15%;
 	}
 	&__pedreiro{
-		max-height: 280px;
+		max-height: 220px;
 		left: 50%;
 		transform: translateX(-50%);
 		bottom: 0%;
@@ -45,35 +47,35 @@
 @media (min-width: 768px){
 	.banner{
 		max-height: none;
-		&__pedrasFundo,
 		&__pedrasFrente{
 			bottom: 15%;
 		}
 		&__pedreiro{
 			max-height: 420px;
 		}
+		&__logoWrapper{
+			top: 0;
+		}
 	}
 }
 @media (min-width: 992px){
 	.banner{
-		&__pedrasFundo,
 		&__pedrasFrente{
 			bottom: 15%;
 		}
 		&__pedreiro{
-			max-height: 480px;
+			max-height: 400px;
 		}
 	}
 }
 @media (min-width: 1200px){
 	.banner{
-		&__pedrasFundo,
 		&__pedrasFrente{
 			bottom: 10%;
 		}
 		&__pedreiro{
 
-			max-height: 650px;
+			max-height: 520px;
 		}
 	}
 }
